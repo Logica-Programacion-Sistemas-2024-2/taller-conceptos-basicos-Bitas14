@@ -9,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class AppTest {
     @Test
     void testSaludarUsuario() {
-        assertEquals("Hola Juan", App.saludarUsuario("Juan"));
-        assertEquals("Hola Maria", App.saludarUsuario("Maria"));
+        assertEquals("Hola Sebas", App.saludarUsuario("Sebas"));
+        assertEquals("Hola Isabela", App.saludarUsuario("Isabela"));
     }
 
     @Test
@@ -45,7 +45,7 @@ class AppTest {
 
     @Test
     void testCalcularPesoNeto() {
-        assertEquals("10|0", App.calcularPesoNeto(10000));
+        assertEquals("10|0", App.calcularPesoNeto(10));
         assertEquals("0|0", App.calcularPesoNeto(0));
     }
 
@@ -111,7 +111,7 @@ class AppTest {
 
     @Test
     void testCalcularPerimetroCuadrado() {
-        assertEquals(20, App.calcularPerimetroCuadrado(5));
+        assertEquals(16, App.calcularPerimetroCuadrado(4));
         assertEquals(0, App.calcularPerimetroCuadrado(0));
     }
 
